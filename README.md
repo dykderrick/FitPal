@@ -4,14 +4,15 @@
 - Workout category classifier
 - Moves Counter (for a specific category)
 
+## Milestones
+### Flowchart
+![Imgur](https://i.imgur.com/GAwDkue.png)
 
 ## TODO List
 - [x] ~~Hello World~~
 - [x] Product flowchart
-  - [ ] Built by [@Memeyun1](https://github.com/Memeyun1) and [AsphaltC](https://github.com/AsphaltC).
-  - [ ] Edit here: [会议桌链接](https://desktop.huiyizhuo.com/1458414258500956162)
-
-![flowchart image](https://i.imgur.com/JWeYAXn.png)
+  - [x] Built by [@Memeyun1](https://github.com/Memeyun1) and [@AsphaltC](https://github.com/AsphaltC).
+  - [x] Edit here: [会议桌链接](https://desktop.huiyizhuo.com/1458414258500956162)
 - [ ] iOS and companion Apple Watch app demo
   - [ ] deadline before Sunday!
   - [ ] Totally built with SwiftUI.
