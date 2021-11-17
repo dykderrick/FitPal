@@ -7,6 +7,11 @@
 
 ## TODO List
 - [x] ~~Hello World~~
+- [x] Product flowchart
+  - [ ] Built by [@Memeyun1](https://github.com/Memeyun1) and [AsphaltC](https://github.com/AsphaltC).
+  - [ ] Edit here: [会议桌链接](https://desktop.huiyizhuo.com/1458414258500956162)
+
+![flowchart image](https://i.imgur.com/JWeYAXn.png)
 - [ ] iOS and companion Apple Watch app demo
   - [ ] deadline before Sunday!
   - [ ] Totally built with SwiftUI.
