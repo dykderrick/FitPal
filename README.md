@@ -6,7 +6,8 @@
 
 ## Milestones
 ### Service blueprint
-![Imgur](https://i.imgur.com/GAwDkue.png)
+![Imgur](https://user-images.githubusercontent.com/82990245/142161676-a0adf4fe-1a88-4cd2-a6d5-e4931f7d69c0.png)
+
 
 ## TODO List
 - [x] ~~Hello World~~
@@ -29,7 +30,8 @@
 - [ ] watchOS frontend design
   - [ ] Lo-fi prototype
     - [ ] DDL: before before Saturday!
-  - [ ] Vibration feedback design  
+  - [ ] Vibration feedback design
+    - [x] design the functions and types
     - [ ] DDL: before before Saturday!
   - [ ] Hi-Fi prototype
 - [ ] data collecting
