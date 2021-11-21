@@ -5,8 +5,28 @@
 - Moves Counter (for a specific category)
 
 ## Milestones
-### Service blueprint
+### **Service blueprint**
 ![Imgur](https://user-images.githubusercontent.com/82990245/142161676-a0adf4fe-1a88-4cd2-a6d5-e4931f7d69c0.png)
+
+### **Data Collection Protocol**
+* Setup
+  * Make sure Apple Watch and iPhone are connected.
+  * Leave at least 500MB free space on Apple Watch to log data.
+  * Download [SensorLog](https://apps.apple.com/us/app/sensorlog/id388014573) on both iPhone and Apple Watch.
+* At Gym
+  * Make sure tester is at his/her normal BPM level (rest for a certain time).
+  * Make sure tester's Apple Watch runs SensorLog only.
+* Begin iteration
+  * Start
+    * Tester press the log button, set him/herself ready to do the task.
+    * Wait for 10 seconds around (this is to stabilize accelerometer).
+    * Start pushing/pulling/running etc.
+    * Do at least 20 units of a specific category or 5 minutes if the category is uncountable.
+  * End
+    * Wait for a minute after finishing moves.
+    * Tester presses finish logging after his/her BPM returns to normal level.
+  * Continue
+* End iteration
 
 
 ## TODO List
@@ -21,8 +41,10 @@
   - [x] Communicate with iOS app.
   - [ ] **On iOS app, present data with simple labels.**
   - [x] Also embed a button on Apple Watch app. When user cicks it, the Apple Watch would call ```playHaptic()``` (maybe other APIs..) to notify with a haptic vibration.
-- [ ] design the structure and process of data collection
-  - [ ] DDL: 11.18
+- [x] design the structure and process of data collection
+  - [x] DDL: 11.18
+  - [x] learn how to use [SensorLog](https://apps.apple.com/us/app/sensorlog/id388014573).
+  - [x] develop the collection protocol.
 - [x] two Apple Watches
   - [x] Apple Watch Series 7 45mm
   - [x] Apple Watch Series 7 41mm
