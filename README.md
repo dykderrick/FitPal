@@ -13,9 +13,12 @@
   * Make sure Apple Watch and iPhone are connected.
   * Leave at least 500MB free space on Apple Watch to log data.
   * Download [SensorLog](https://apps.apple.com/us/app/sensorlog/id388014573) on both iPhone and Apple Watch.
+  * Set sampling rate on Apple Watch to 50Hz.
+  * Trun off Battery and Core Location logging option.
+  * Trun on device ID option.
 * At Gym
   * Make sure tester is at his/her normal BPM level (rest for a certain time).
-  * Make sure tester's Apple Watch runs SensorLog only.
+  * Make sure tester's Apple Watch runs SensorLog on foreground.
 * Begin iteration
   * Start
     * Tester press the log button, set him/herself ready to do the task.
