@@ -31,6 +31,9 @@
   * Continue
 * End iteration
 
+### First sets of data collected
+Bench Press (卧推), Russian Twist (俄罗斯转体), Elliptical (椭圆机), Barbell Rowing (杠铃划船), Pec Fly (蝴蝶机夹胸).
+
 
 ## TODO List
 - [x] ~~Hello World~~
@@ -62,7 +65,7 @@
     - [x] design the functions and types
     - [ ] DDL: before before Saturday!
   - [ ] Hi-Fi prototype
-- [ ] data collecting
+- [x] data collecting
 - [ ] iOS, watchOS backend design
 - [ ] build and train the model
 - [ ] evaluate the model
