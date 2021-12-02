@@ -34,7 +34,17 @@
 ### First sets of data collected
 Bench Press (卧推), Russian Twist (俄罗斯转体), Elliptical (椭圆机), Barbell Rowing (杠铃划船), Pec Fly (蝴蝶机夹胸).
 
+### **IOS and companion Apple Watch App UI Design**
+* Lo-fi design [FitPal_ios _ui_Lo-fi.sketch.zip](https://github.com/dykderrick/FitPal/files/7638544/FitPal_ios._ui_Lo-fi.sketch.zip)
+* Hi-fi UI design
+ * Iphone ui design[FitPal_ios _ui.sketch.zip](https://github.com/dykderrick/FitPal/files/7638548/FitPal_ios._ui.sketch.zip)
 
+### **Videos during develoment**
+* Workout types
+ * Bench press
+  *Uploading bench press- tuition.mp4…
+  *https://user-images.githubusercontent.com/82990245/144348554-62fdabbc-92a9-452c-ab4a-48e2831c0288.mp4
+  
 ## TODO List
 - [x] ~~Hello World~~
 - [x] Product Service blueprint
@@ -54,16 +64,16 @@ Bench Press (卧推), Russian Twist (俄罗斯转体), Elliptical (椭圆机), B
 - [x] two Apple Watches
   - [x] Apple Watch Series 7 45mm
   - [x] Apple Watch Series 7 41mm
-- [ ] iOS frontend design
-  - [ ] Lo-fi prototype
-    - [ ] DDL: before before Saturday!
-  - [ ] Hi-Fi prototype
+- [x] iOS frontend design
+  - [x] Lo-fi prototype
+    - [x] DDL: before before Saturday!
+  - [x] Hi-Fi prototype
 - [ ] watchOS frontend design
-  - [ ] Lo-fi prototype
-    - [ ] DDL: before before Saturday!
+  - [x] Lo-fi prototype
+    - [x] DDL: before before Saturday!
   - [ ] Vibration feedback design
     - [x] design the functions and types
-    - [ ] DDL: before before Saturday!
+    - [x] DDL: before before Saturday!
   - [ ] Hi-Fi prototype
 - [x] data collecting
 - [ ] iOS, watchOS backend design
