@@ -12,10 +12,10 @@
 * Setup
   * Make sure Apple Watch and iPhone are connected.
   * Leave at least 500MB free space on Apple Watch to log data.
-  * Download [SensorLog](https://apps.apple.com/us/app/sensorlog/id388014573) on both iPhone and Apple Watch.
+  * Download [SensorLog](https://apps.apple.com/us/app/sensorlog/id388014573) on the App Store.
   * Set sampling rate on Apple Watch to 50Hz.
-  * Trun off Battery and Core Location logging option.
-  * Trun on device ID option.
+  * Turn off Battery and Core Location logging option.
+  * \[Optional\] Turn on device ID.
 * At Gym
   * Make sure tester is at his/her normal BPM level (rest for a certain time).
   * Make sure tester's Apple Watch runs SensorLog on foreground.
@@ -26,8 +26,8 @@
     * Start pushing/pulling/running etc.
     * Do at least 20 units of a specific category or 5 minutes if the category is uncountable.
   * End
-    * Wait for a minute after finishing moves.
-    * Tester presses finish logging after his/her BPM returns to normal level.
+    * Wait for a minute after finishing each iteration.
+    * Tester hits finish logging button after his/her BPM returns to normal level (**Edit**: it is also okay if the BPM doesn't return to the normal level because the algorithm will not take heart rate as a variable).
   * Continue
 * End iteration
 
@@ -54,20 +54,22 @@ Bench Press (卧推), Russian Twist (俄罗斯转体), Elliptical (椭圆机), B
 - [x] two Apple Watches
   - [x] Apple Watch Series 7 45mm
   - [x] Apple Watch Series 7 41mm
-- [ ] iOS frontend design
-  - [ ] Lo-fi prototype
-    - [ ] DDL: before before Saturday!
-  - [ ] Hi-Fi prototype
+- [x] iOS frontend design
+  - [x] Lo-fi prototype
+    - [x] DDL: before before Saturday!
+  - [x] Hi-Fi prototype
 - [ ] watchOS frontend design
   - [ ] Lo-fi prototype
     - [ ] DDL: before before Saturday!
-  - [ ] Vibration feedback design
+  - [x] Vibration feedback design
     - [x] design the functions and types
-    - [ ] DDL: before before Saturday!
+    - [x] DDL: before before Saturday!
   - [ ] Hi-Fi prototype
 - [x] data collecting
-- [ ] iOS, watchOS backend design
-- [ ] build and train the model
+- [ ] iOS, WatchKit backend design
+  - [ ] iOS
+  - [ ] WatchKit
+- [x] build and train the model
 - [ ] evaluate the model
 - [ ] deployment to watchOS and iOS
 - [ ] test
