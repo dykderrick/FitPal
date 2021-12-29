@@ -34,17 +34,7 @@
 ### First sets of data collected
 Bench Press (卧推), Russian Twist (俄罗斯转体), Elliptical (椭圆机), Barbell Rowing (杠铃划船), Pec Fly (蝴蝶机夹胸).
 
-### **IOS and companion Apple Watch App UI Design**
-* Lo-fi design [FitPal_ios _ui_Lo-fi.sketch.zip](https://github.com/dykderrick/FitPal/files/7638544/FitPal_ios._ui_Lo-fi.sketch.zip)
-* Hi-fi UI design
- * Iphone ui design[FitPal_ios _ui.sketch.zip](https://github.com/dykderrick/FitPal/files/7638548/FitPal_ios._ui.sketch.zip)
 
-### **Videos during develoment**
-* Workout types
- * Bench press
-  *Uploading bench press- tuition.mp4…
-  *https://user-images.githubusercontent.com/82990245/144348554-62fdabbc-92a9-452c-ab4a-48e2831c0288.mp4
-  
 ## TODO List
 - [x] ~~Hello World~~
 - [x] Product Service blueprint
@@ -71,20 +61,20 @@ Bench Press (卧推), Russian Twist (俄罗斯转体), Elliptical (椭圆机), B
 - [ ] watchOS frontend design
   - [x] Lo-fi prototype
     - [x] DDL: before before Saturday!
-  - [ ] Vibration feedback design
+  - [x] Vibration feedback design
     - [x] design the functions and types
     - [x] DDL: before before Saturday!
-  - [ ] Hi-Fi prototype
+  - [x] Hi-Fi prototype
 - [x] data collecting
-- [ ] iOS, WatchKit backend design
-  - [ ] iOS
-  - [ ] WatchKit
+- [x] iOS, WatchKit backend design
+  - [x] iOS
+  - [x] WatchKit
 - [x] build and train the model
-- [ ] evaluate the model
-- [ ] deployment to watchOS and iOS
-- [ ] test
-  - [ ] Model test
-  - [ ] App test
-  - [ ] User test
-- [ ] concept videos & presentation ppt
+- [x] evaluate the model
+- [x] deployment to watchOS and iOS
+- [x] test
+  - [x] Model test
+  - [x] App test
+  - [x] User test
+- [x] concept videos & presentation ppt
 - [ ] final report paper
