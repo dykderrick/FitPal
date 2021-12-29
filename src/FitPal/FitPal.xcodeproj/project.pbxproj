@@ -1,0 +1,916 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3533EA2C27697DE80001A837 /* Workout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3533EA2B27697DE80001A837 /* Workout.storyboard */; };
+		35350C2A276DBE170033DD27 /* CountdownInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35350C29276DBE170033DD27 /* CountdownInterfaceController.swift */; };
+		35350C2C276DC42C0033DD27 /* BreathoutInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35350C2B276DC42C0033DD27 /* BreathoutInterfaceController.swift */; };
+		35350C2E276DCDB90033DD27 /* WorkoutProgressInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35350C2D276DCDB90033DD27 /* WorkoutProgressInterfaceController.swift */; };
+		35350C30276DDA740033DD27 /* WorkoutFinishInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35350C2F276DDA740033DD27 /* WorkoutFinishInterfaceController.swift */; };
+		355184B327736AAE00CF0038 /* LoadingInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355184B227736AAE00CF0038 /* LoadingInterfaceController.swift */; };
+		355184B82773907400CF0038 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355184B72773907400CF0038 /* Counter.swift */; };
+		355184B92773907400CF0038 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355184B72773907400CF0038 /* Counter.swift */; };
+		355184BB277390C500CF0038 /* Correlation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355184BA277390C500CF0038 /* Correlation.swift */; };
+		355184BC277390C500CF0038 /* Correlation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355184BA277390C500CF0038 /* Correlation.swift */; };
+		356FBCA5276C583900E51769 /* WorkoutSelectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356FBCA4276C583900E51769 /* WorkoutSelectionController.swift */; };
+		356FBCA7276C5D0600E51769 /* TableRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356FBCA6276C5D0600E51769 /* TableRowController.swift */; };
+		3571AB722761CF91009C6AEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3571AB712761CF91009C6AEA /* AppDelegate.swift */; };
+		3571AB742761CF91009C6AEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3571AB732761CF91009C6AEA /* SceneDelegate.swift */; };
+		3571AB762761CF91009C6AEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3571AB752761CF91009C6AEA /* ViewController.swift */; };
+		3571AB792761CF91009C6AEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3571AB772761CF91009C6AEA /* Main.storyboard */; };
+		3571AB7B2761CF93009C6AEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3571AB7A2761CF93009C6AEA /* Assets.xcassets */; };
+		3571AB7E2761CF93009C6AEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3571AB7C2761CF93009C6AEA /* LaunchScreen.storyboard */; };
+		3571AB832761CF93009C6AEA /* FitPal WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3571AB822761CF93009C6AEA /* FitPal WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3571AB892761CF93009C6AEA /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3571AB872761CF93009C6AEA /* Interface.storyboard */; };
+		3571AB8B2761CF94009C6AEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3571AB8A2761CF94009C6AEA /* Assets.xcassets */; };
+		3571AB912761CF94009C6AEA /* FitPal WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3571AB902761CF94009C6AEA /* FitPal WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3571AB982761CF94009C6AEA /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3571AB972761CF94009C6AEA /* ExtensionDelegate.swift */; };
+		3571AB9A2761CF94009C6AEA /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3571AB992761CF94009C6AEA /* NotificationController.swift */; };
+		3571AB9C2761CF94009C6AEA /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3571AB9B2761CF94009C6AEA /* ComplicationController.swift */; };
+		3571AB9E2761CF95009C6AEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3571AB9D2761CF95009C6AEA /* Assets.xcassets */; };
+		3571ABBF2761D6BA009C6AEA /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3571ABBE2761D6BA009C6AEA /* HealthKit.framework */; };
+		3571ABC22761D6F6009C6AEA /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3571ABC12761D6F6009C6AEA /* HealthKit.framework */; };
+		3571ABC42761DFB6009C6AEA /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3571ABC32761DFB6009C6AEA /* HomeController.swift */; };
+		3571ABC62761DFC8009C6AEA /* CourseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3571ABC52761DFC8009C6AEA /* CourseController.swift */; };
+		3571ABC82761DFDE009C6AEA /* HistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3571ABC72761DFDE009C6AEA /* HistoryController.swift */; };
+		3571ABCA2761DFEE009C6AEA /* MeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3571ABC92761DFEE009C6AEA /* MeController.swift */; };
+		35837A962769E2C10075C32F /* WorkoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35837A952769E2C10075C32F /* WorkoutController.swift */; };
+		35837A982769EB710075C32F /* HealthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35837A972769EB710075C32F /* HealthStore.swift */; };
+		35837A9C276A38260075C32F /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35837A99276A34AB0075C32F /* WorkoutManager.swift */; };
+		35837A9D276A383C0075C32F /* HealthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35837A972769EB710075C32F /* HealthStore.swift */; };
+		35837AA1276B13E20075C32F /* WatchConnectivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35837AA0276B13E10075C32F /* WatchConnectivityManager.swift */; };
+		35B832852774A2E400613079 /* Controls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B832842774A2E400613079 /* Controls.swift */; };
+		35B832882774C00B00613079 /* WorkoutProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B832872774C00B00613079 /* WorkoutProgressController.swift */; };
+		35F0C76227707B56000038A8 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F0C76127707B56000038A8 /* Workout.swift */; };
+		35F0C76327707B56000038A8 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F0C76127707B56000038A8 /* Workout.swift */; };
+		35F0C765277085AF000038A8 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F0C764277085AF000038A8 /* Utils.swift */; };
+		35F0C766277085AF000038A8 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F0C764277085AF000038A8 /* Utils.swift */; };
+		35F0C7692770C2FF000038A8 /* WorkoutProgressControlInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F0C7682770C2FF000038A8 /* WorkoutProgressControlInterfaceController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3571AB842761CF93009C6AEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3571AB662761CF91009C6AEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3571AB812761CF93009C6AEA;
+			remoteInfo = "FitPal WatchKit App";
+		};
+		3571AB922761CF94009C6AEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3571AB662761CF91009C6AEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3571AB8F2761CF94009C6AEA;
+			remoteInfo = "FitPal WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3571ABA62761CF95009C6AEA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3571AB912761CF94009C6AEA /* FitPal WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3571ABAA2761CF95009C6AEA /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				3571AB832761CF93009C6AEA /* FitPal WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3533EA2B27697DE80001A837 /* Workout.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Workout.storyboard; sourceTree = "<group>"; };
+		35350C29276DBE170033DD27 /* CountdownInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownInterfaceController.swift; sourceTree = "<group>"; };
+		35350C2B276DC42C0033DD27 /* BreathoutInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathoutInterfaceController.swift; sourceTree = "<group>"; };
+		35350C2D276DCDB90033DD27 /* WorkoutProgressInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutProgressInterfaceController.swift; sourceTree = "<group>"; };
+		35350C2F276DDA740033DD27 /* WorkoutFinishInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutFinishInterfaceController.swift; sourceTree = "<group>"; };
+		355184B227736AAE00CF0038 /* LoadingInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingInterfaceController.swift; sourceTree = "<group>"; };
+		355184B72773907400CF0038 /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
+		355184BA277390C500CF0038 /* Correlation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Correlation.swift; sourceTree = "<group>"; };
+		356FBCA4276C583900E51769 /* WorkoutSelectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutSelectionController.swift; sourceTree = "<group>"; };
+		356FBCA6276C5D0600E51769 /* TableRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableRowController.swift; sourceTree = "<group>"; };
+		3571AB6E2761CF91009C6AEA /* FitPal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitPal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3571AB712761CF91009C6AEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3571AB732761CF91009C6AEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3571AB752761CF91009C6AEA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3571AB782761CF91009C6AEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3571AB7A2761CF93009C6AEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3571AB7D2761CF93009C6AEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3571AB7F2761CF93009C6AEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3571AB822761CF93009C6AEA /* FitPal WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FitPal WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3571AB882761CF93009C6AEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		3571AB8A2761CF94009C6AEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3571AB902761CF94009C6AEA /* FitPal WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FitPal WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3571AB972761CF94009C6AEA /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		3571AB992761CF94009C6AEA /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		3571AB9B2761CF94009C6AEA /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		3571AB9D2761CF95009C6AEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3571AB9F2761CF95009C6AEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3571ABA02761CF95009C6AEA /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		3571ABBC2761D6BA009C6AEA /* FitPal.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FitPal.entitlements; sourceTree = "<group>"; };
+		3571ABBE2761D6BA009C6AEA /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		3571ABC02761D6F6009C6AEA /* FitPal WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "FitPal WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		3571ABC12761D6F6009C6AEA /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS8.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		3571ABC32761DFB6009C6AEA /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		3571ABC52761DFC8009C6AEA /* CourseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseController.swift; sourceTree = "<group>"; };
+		3571ABC72761DFDE009C6AEA /* HistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryController.swift; sourceTree = "<group>"; };
+		3571ABC92761DFEE009C6AEA /* MeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeController.swift; sourceTree = "<group>"; };
+		35837A952769E2C10075C32F /* WorkoutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutController.swift; sourceTree = "<group>"; };
+		35837A972769EB710075C32F /* HealthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStore.swift; sourceTree = "<group>"; };
+		35837A99276A34AB0075C32F /* WorkoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutManager.swift; sourceTree = "<group>"; };
+		35837AA0276B13E10075C32F /* WatchConnectivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityManager.swift; sourceTree = "<group>"; };
+		35B832842774A2E400613079 /* Controls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controls.swift; sourceTree = "<group>"; };
+		35B832872774C00B00613079 /* WorkoutProgressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutProgressController.swift; sourceTree = "<group>"; };
+		35F0C76027707B56000038A8 /* FitPal WatchKit App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FitPal WatchKit App-Bridging-Header.h"; sourceTree = "<group>"; };
+		35F0C76127707B56000038A8 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		35F0C764277085AF000038A8 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		35F0C7682770C2FF000038A8 /* WorkoutProgressControlInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutProgressControlInterfaceController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3571AB6B2761CF91009C6AEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3571ABBF2761D6BA009C6AEA /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3571AB8D2761CF94009C6AEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3571ABC22761D6F6009C6AEA /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C16D0BA4F25A98E8A95B8D1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3533EA2F276989470001A837 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				35B832862774A2EA00613079 /* Shared */,
+				3571AB992761CF94009C6AEA /* NotificationController.swift */,
+				3571AB9B2761CF94009C6AEA /* ComplicationController.swift */,
+				356FBCA8276C5D0C00E51769 /* WorkoutSelection */,
+				35350C29276DBE170033DD27 /* CountdownInterfaceController.swift */,
+				35350C2B276DC42C0033DD27 /* BreathoutInterfaceController.swift */,
+				35F0C7672770C2D8000038A8 /* WorkoutProgress */,
+				35350C2F276DDA740033DD27 /* WorkoutFinishInterfaceController.swift */,
+				355184B227736AAE00CF0038 /* LoadingInterfaceController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		355184BE277390DD00CF0038 /* Algorithms */ = {
+			isa = PBXGroup;
+			children = (
+				355184BA277390C500CF0038 /* Correlation.swift */,
+				355184B72773907400CF0038 /* Counter.swift */,
+			);
+			path = Algorithms;
+			sourceTree = "<group>";
+		};
+		356FBCA8276C5D0C00E51769 /* WorkoutSelection */ = {
+			isa = PBXGroup;
+			children = (
+				356FBCA4276C583900E51769 /* WorkoutSelectionController.swift */,
+				356FBCA6276C5D0600E51769 /* TableRowController.swift */,
+			);
+			path = WorkoutSelection;
+			sourceTree = "<group>";
+		};
+		3571AB652761CF91009C6AEA = {
+			isa = PBXGroup;
+			children = (
+				355184BE277390DD00CF0038 /* Algorithms */,
+				35F0C764277085AF000038A8 /* Utils.swift */,
+				35837AA0276B13E10075C32F /* WatchConnectivityManager.swift */,
+				35837A9B276A34B00075C32F /* Models */,
+				3571AB702761CF91009C6AEA /* FitPal */,
+				3571AB862761CF93009C6AEA /* FitPal WatchKit App */,
+				3571AB942761CF94009C6AEA /* FitPal WatchKit Extension */,
+				3571AB6F2761CF91009C6AEA /* Products */,
+				3571ABBD2761D6BA009C6AEA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3571AB6F2761CF91009C6AEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3571AB6E2761CF91009C6AEA /* FitPal.app */,
+				3571AB822761CF93009C6AEA /* FitPal WatchKit App.app */,
+				3571AB902761CF94009C6AEA /* FitPal WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3571AB702761CF91009C6AEA /* FitPal */ = {
+			isa = PBXGroup;
+			children = (
+				3571ABBC2761D6BA009C6AEA /* FitPal.entitlements */,
+				3571AB712761CF91009C6AEA /* AppDelegate.swift */,
+				3571AB732761CF91009C6AEA /* SceneDelegate.swift */,
+				3571ABCD2761E1BE009C6AEA /* Views */,
+				3571AB7A2761CF93009C6AEA /* Assets.xcassets */,
+				3571AB7F2761CF93009C6AEA /* Info.plist */,
+				3571ABCC2761E07D009C6AEA /* Controllers */,
+			);
+			path = FitPal;
+			sourceTree = "<group>";
+		};
+		3571AB862761CF93009C6AEA /* FitPal WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				3571AB872761CF93009C6AEA /* Interface.storyboard */,
+				3571AB8A2761CF94009C6AEA /* Assets.xcassets */,
+			);
+			path = "FitPal WatchKit App";
+			sourceTree = "<group>";
+		};
+		3571AB942761CF94009C6AEA /* FitPal WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3571ABC02761D6F6009C6AEA /* FitPal WatchKit Extension.entitlements */,
+				3533EA2F276989470001A837 /* Controllers */,
+				3571AB972761CF94009C6AEA /* ExtensionDelegate.swift */,
+				3571AB9D2761CF95009C6AEA /* Assets.xcassets */,
+				3571AB9F2761CF95009C6AEA /* Info.plist */,
+				3571ABA02761CF95009C6AEA /* PushNotificationPayload.apns */,
+			);
+			path = "FitPal WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		3571ABBD2761D6BA009C6AEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3571ABC12761D6F6009C6AEA /* HealthKit.framework */,
+				3571ABBE2761D6BA009C6AEA /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3571ABCC2761E07D009C6AEA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3571AB752761CF91009C6AEA /* ViewController.swift */,
+				35837A942769923C0075C32F /* Main */,
+				35B832892774C01000613079 /* Workout */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3571ABCD2761E1BE009C6AEA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3571AB772761CF91009C6AEA /* Main.storyboard */,
+				3571AB7C2761CF93009C6AEA /* LaunchScreen.storyboard */,
+				3533EA2B27697DE80001A837 /* Workout.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		35837A942769923C0075C32F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3571ABC32761DFB6009C6AEA /* HomeController.swift */,
+				3571ABC52761DFC8009C6AEA /* CourseController.swift */,
+				3571ABC72761DFDE009C6AEA /* HistoryController.swift */,
+				3571ABC92761DFEE009C6AEA /* MeController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		35837A9B276A34B00075C32F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				35837A972769EB710075C32F /* HealthStore.swift */,
+				35837A99276A34AB0075C32F /* WorkoutManager.swift */,
+				35F0C76127707B56000038A8 /* Workout.swift */,
+				35F0C76027707B56000038A8 /* FitPal WatchKit App-Bridging-Header.h */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		35B832862774A2EA00613079 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				35B832842774A2E400613079 /* Controls.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		35B832892774C01000613079 /* Workout */ = {
+			isa = PBXGroup;
+			children = (
+				35837A952769E2C10075C32F /* WorkoutController.swift */,
+				35B832872774C00B00613079 /* WorkoutProgressController.swift */,
+			);
+			path = Workout;
+			sourceTree = "<group>";
+		};
+		35F0C7672770C2D8000038A8 /* WorkoutProgress */ = {
+			isa = PBXGroup;
+			children = (
+				35F0C7682770C2FF000038A8 /* WorkoutProgressControlInterfaceController.swift */,
+				35350C2D276DCDB90033DD27 /* WorkoutProgressInterfaceController.swift */,
+			);
+			path = WorkoutProgress;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3571AB6D2761CF91009C6AEA /* FitPal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3571ABAB2761CF95009C6AEA /* Build configuration list for PBXNativeTarget "FitPal" */;
+			buildPhases = (
+				3571AB6A2761CF91009C6AEA /* Sources */,
+				3571AB6B2761CF91009C6AEA /* Frameworks */,
+				3571AB6C2761CF91009C6AEA /* Resources */,
+				3571ABAA2761CF95009C6AEA /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3571AB852761CF93009C6AEA /* PBXTargetDependency */,
+			);
+			name = FitPal;
+			productName = FitPal;
+			productReference = 3571AB6E2761CF91009C6AEA /* FitPal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3571AB812761CF93009C6AEA /* FitPal WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3571ABA72761CF95009C6AEA /* Build configuration list for PBXNativeTarget "FitPal WatchKit App" */;
+			buildPhases = (
+				3571AB802761CF93009C6AEA /* Resources */,
+				3571ABA62761CF95009C6AEA /* Embed App Extensions */,
+				C16D0BA4F25A98E8A95B8D1D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3571AB932761CF94009C6AEA /* PBXTargetDependency */,
+			);
+			name = "FitPal WatchKit App";
+			productName = "FitPal WatchKit App";
+			productReference = 3571AB822761CF93009C6AEA /* FitPal WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		3571AB8F2761CF94009C6AEA /* FitPal WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3571ABA32761CF95009C6AEA /* Build configuration list for PBXNativeTarget "FitPal WatchKit Extension" */;
+			buildPhases = (
+				3571AB8C2761CF94009C6AEA /* Sources */,
+				3571AB8D2761CF94009C6AEA /* Frameworks */,
+				3571AB8E2761CF94009C6AEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FitPal WatchKit Extension";
+			productName = "FitPal WatchKit Extension";
+			productReference = 3571AB902761CF94009C6AEA /* FitPal WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3571AB662761CF91009C6AEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					3571AB6D2761CF91009C6AEA = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					3571AB812761CF93009C6AEA = {
+						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
+					};
+					3571AB8F2761CF94009C6AEA = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 3571AB692761CF91009C6AEA /* Build configuration list for PBXProject "FitPal" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3571AB652761CF91009C6AEA;
+			productRefGroup = 3571AB6F2761CF91009C6AEA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3571AB6D2761CF91009C6AEA /* FitPal */,
+				3571AB812761CF93009C6AEA /* FitPal WatchKit App */,
+				3571AB8F2761CF94009C6AEA /* FitPal WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3571AB6C2761CF91009C6AEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3533EA2C27697DE80001A837 /* Workout.storyboard in Resources */,
+				3571AB7E2761CF93009C6AEA /* LaunchScreen.storyboard in Resources */,
+				3571AB7B2761CF93009C6AEA /* Assets.xcassets in Resources */,
+				3571AB792761CF91009C6AEA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3571AB802761CF93009C6AEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3571AB8B2761CF94009C6AEA /* Assets.xcassets in Resources */,
+				3571AB892761CF93009C6AEA /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3571AB8E2761CF94009C6AEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3571AB9E2761CF95009C6AEA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3571AB6A2761CF91009C6AEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3571ABC42761DFB6009C6AEA /* HomeController.swift in Sources */,
+				35837A962769E2C10075C32F /* WorkoutController.swift in Sources */,
+				355184B82773907400CF0038 /* Counter.swift in Sources */,
+				3571AB762761CF91009C6AEA /* ViewController.swift in Sources */,
+				3571ABC62761DFC8009C6AEA /* CourseController.swift in Sources */,
+				35837AA1276B13E20075C32F /* WatchConnectivityManager.swift in Sources */,
+				35B832882774C00B00613079 /* WorkoutProgressController.swift in Sources */,
+				3571AB722761CF91009C6AEA /* AppDelegate.swift in Sources */,
+				35F0C76227707B56000038A8 /* Workout.swift in Sources */,
+				355184BB277390C500CF0038 /* Correlation.swift in Sources */,
+				3571ABCA2761DFEE009C6AEA /* MeController.swift in Sources */,
+				3571ABC82761DFDE009C6AEA /* HistoryController.swift in Sources */,
+				35837A982769EB710075C32F /* HealthStore.swift in Sources */,
+				3571AB742761CF91009C6AEA /* SceneDelegate.swift in Sources */,
+				35F0C765277085AF000038A8 /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3571AB8C2761CF94009C6AEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35F0C7692770C2FF000038A8 /* WorkoutProgressControlInterfaceController.swift in Sources */,
+				35350C2E276DCDB90033DD27 /* WorkoutProgressInterfaceController.swift in Sources */,
+				356FBCA5276C583900E51769 /* WorkoutSelectionController.swift in Sources */,
+				356FBCA7276C5D0600E51769 /* TableRowController.swift in Sources */,
+				3571AB9A2761CF94009C6AEA /* NotificationController.swift in Sources */,
+				3571AB9C2761CF94009C6AEA /* ComplicationController.swift in Sources */,
+				355184BC277390C500CF0038 /* Correlation.swift in Sources */,
+				35F0C766277085AF000038A8 /* Utils.swift in Sources */,
+				3571AB982761CF94009C6AEA /* ExtensionDelegate.swift in Sources */,
+				355184B327736AAE00CF0038 /* LoadingInterfaceController.swift in Sources */,
+				35350C2C276DC42C0033DD27 /* BreathoutInterfaceController.swift in Sources */,
+				35F0C76327707B56000038A8 /* Workout.swift in Sources */,
+				35837A9C276A38260075C32F /* WorkoutManager.swift in Sources */,
+				35B832852774A2E400613079 /* Controls.swift in Sources */,
+				355184B92773907400CF0038 /* Counter.swift in Sources */,
+				35837A9D276A383C0075C32F /* HealthStore.swift in Sources */,
+				35350C2A276DBE170033DD27 /* CountdownInterfaceController.swift in Sources */,
+				35350C30276DDA740033DD27 /* WorkoutFinishInterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3571AB852761CF93009C6AEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3571AB812761CF93009C6AEA /* FitPal WatchKit App */;
+			targetProxy = 3571AB842761CF93009C6AEA /* PBXContainerItemProxy */;
+		};
+		3571AB932761CF94009C6AEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3571AB8F2761CF94009C6AEA /* FitPal WatchKit Extension */;
+			targetProxy = 3571AB922761CF94009C6AEA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3571AB772761CF91009C6AEA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3571AB782761CF91009C6AEA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3571AB7C2761CF93009C6AEA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3571AB7D2761CF93009C6AEA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3571AB872761CF93009C6AEA /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3571AB882761CF93009C6AEA /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3571ABA12761CF95009C6AEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3571ABA22761CF95009C6AEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		3571ABA42761CF95009C6AEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "FitPal WatchKit Extension/FitPal WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G82CLNVA64;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FitPal WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "FitPal WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dykderrick.FitPal.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		3571ABA52761CF95009C6AEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "FitPal WatchKit Extension/FitPal WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G82CLNVA64;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FitPal WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "FitPal WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dykderrick.FitPal.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		3571ABA82761CF95009C6AEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G82CLNVA64;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = FitPal_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "FitPal WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = dykderrick.FitPal;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dykderrick.FitPal.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Models/FitPal WatchKit App-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		3571ABA92761CF95009C6AEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G82CLNVA64;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = FitPal_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "FitPal WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = dykderrick.FitPal;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dykderrick.FitPal.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Models/FitPal WatchKit App-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		3571ABAC2761CF95009C6AEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FitPal/FitPal.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G82CLNVA64;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FitPal/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dykderrick.FitPal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3571ABAD2761CF95009C6AEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FitPal/FitPal.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G82CLNVA64;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FitPal/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dykderrick.FitPal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3571AB692761CF91009C6AEA /* Build configuration list for PBXProject "FitPal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3571ABA12761CF95009C6AEA /* Debug */,
+				3571ABA22761CF95009C6AEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3571ABA32761CF95009C6AEA /* Build configuration list for PBXNativeTarget "FitPal WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3571ABA42761CF95009C6AEA /* Debug */,
+				3571ABA52761CF95009C6AEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3571ABA72761CF95009C6AEA /* Build configuration list for PBXNativeTarget "FitPal WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3571ABA82761CF95009C6AEA /* Debug */,
+				3571ABA92761CF95009C6AEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3571ABAB2761CF95009C6AEA /* Build configuration list for PBXNativeTarget "FitPal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3571ABAC2761CF95009C6AEA /* Debug */,
+				3571ABAD2761CF95009C6AEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3571AB662761CF91009C6AEA /* Project object */;
+}

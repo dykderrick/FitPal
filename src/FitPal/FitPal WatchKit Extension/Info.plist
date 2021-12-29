@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>FitPal requests your workout data to syncronize beween iOS and watchOS workout session.</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>FitPal requests your workout data for real-time counting algorithm.</string>
+	<key>NSHealthClinicalHealthRecordsShareUsageDescription</key>
+	<string>FitPal requests your health records to provide you with visualized workout history.</string>
+	<key>NSExtension</key>
+	<dict>
+		<key>NSExtensionAttributes</key>
+		<dict>
+			<key>WKAppBundleIdentifier</key>
+			<string>dykderrick.FitPal.watchkitapp</string>
+		</dict>
+		<key>NSExtensionPointIdentifier</key>
+		<string>com.apple.watchkit</string>
+	</dict>
+</dict>
+</plist>

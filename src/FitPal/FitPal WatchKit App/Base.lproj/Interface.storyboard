@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="19455" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qBn-HJ-be3">
+    <device id="watch45"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="19454"/>
+    </dependencies>
+    <scenes>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="-223" y="157"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="FitPal_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="26" y="157"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="FitPal_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="26" y="-143"/>
+        </scene>
+        <!--Workout Selection-->
+        <scene sceneID="Ed7-he-oe3">
+            <objects>
+                <controller title="Workout Selection" id="qBn-HJ-be3" customClass="WorkoutSelectionController" customModule="FitPal_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="2ZL-WQ-vV0">
+                            <items>
+                                <tableRow identifier="Cell" id="n6p-DN-NQj" customClass="TableRowController" customModule="FitPal_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="145" alignment="left" layout="vertical" id="0Zi-Eo-Qt2">
+                                        <items>
+                                            <group width="200" height="72" alignment="left" radius="8" id="Ru0-1N-jMV">
+                                                <items>
+                                                    <group width="88" height="77" alignment="left" layout="vertical" id="5vK-Lt-xry">
+                                                        <items>
+                                                            <label width="103" height="42" alignment="left" text="Type" numberOfLines="2" id="qZc-tj-ax9">
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="font" type="system" weight="semibold" pointSize="17"/>
+                                                            </label>
+                                                            <label alignment="left" text="Group" id="acq-7K-5F3">
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="font" type="system" pointSize="14"/>
+                                                            </label>
+                                                        </items>
+                                                    </group>
+                                                    <imageView width="70" height="48" alignment="left" verticalAlignment="bottom" image="BenchPress" id="adP-UI-uGQ"/>
+                                                </items>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </group>
+                                            <button width="200" alignment="left" title="Start" id="e0f-Ra-nb6" userLabel="Start">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" red="1" green="0.58823529411764708" blue="0.0039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="font" type="system" weight="semibold" pointSize="17"/>
+                                            </button>
+                                        </items>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="workoutImageView" destination="adP-UI-uGQ" id="eQ2-0g-rRW"/>
+                                        <outlet property="workoutInfoGroup" destination="Ru0-1N-jMV" id="2R8-Ss-4FI"/>
+                                        <outlet property="workoutStartButton" destination="e0f-Ra-nb6" id="lsP-s5-JzL"/>
+                                        <outlet property="workoutTotalGroupLabel" destination="acq-7K-5F3" id="Zmc-qe-jhO"/>
+                                        <outlet property="workoutTypeLabel" destination="qZc-tj-ax9" id="ZBK-zx-hLR"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="2ZL-WQ-vV0" id="3WI-dv-wbH"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="579" y="-143"/>
+        </scene>
+        <!--Countdown-->
+        <scene sceneID="iZG-KB-RMc">
+            <objects>
+                <controller identifier="Countdown" title="Countdown" id="eMb-mZ-8OZ" customClass="CountdownInterfaceController" customModule="FitPal_WatchKit_Extension">
+                    <items>
+                        <group width="165" height="165" alignment="center" backgroundImage="count-down-5" id="BEM-7X-bJp">
+                            <items>
+                                <group width="1" height="139" alignment="left" layout="vertical" id="jXq-9Y-F4W">
+                                    <items>
+                                        <label alignment="center" verticalAlignment="center" text="5" id="Mdi-Hu-Jes">
+                                            <fontDescription key="font" type="system" weight="heavy" pointSize="76"/>
+                                        </label>
+                                        <label alignment="center" verticalAlignment="bottom" text="READY?" id="eJ4-vH-Qo8">
+                                            <color key="textColor" red="0.67450980392156867" green="0.67450980392156867" blue="0.67450980392156867" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" type="system" weight="medium" pointSize="16"/>
+                                        </label>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="backgroundGroup" destination="BEM-7X-bJp" id="P2t-Pz-7gn"/>
+                        <outlet property="countdownNumberLabel" destination="Mdi-Hu-Jes" id="QZc-Kl-Vmf"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="863" y="-143"/>
+        </scene>
+        <!--Breathout-->
+        <scene sceneID="aeF-ny-4Pd">
+            <objects>
+                <controller identifier="Breathout" title="Breathout" id="oVC-vt-Cuf" customClass="BreathoutInterfaceController" customModule="FitPal_WatchKit_Extension">
+                    <items>
+                        <group width="120" height="120" alignment="center" backgroundImage="breathout347" id="7wV-1C-XXg">
+                            <items>
+                                <label alignment="center" verticalAlignment="center" text="5" id="tWp-mC-cxQ">
+                                    <fontDescription key="font" type="system" weight="heavy" pointSize="76"/>
+                                </label>
+                            </items>
+                        </group>
+                        <label alignment="center" text="Breath Out" id="aJO-tO-iJt">
+                            <fontDescription key="font" type="system" weight="medium" pointSize="16"/>
+                        </label>
+                        <group width="71" height="16" alignment="center" verticalAlignment="bottom" id="Mzh-6k-6de">
+                            <items>
+                                <imageView width="20" height="16" alignment="left" image="Heart" id="hSP-ZL-bUH"/>
+                                <label alignment="left" text="84" id="E3z-Fh-PBN">
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="16"/>
+                                </label>
+                                <label alignment="left" verticalAlignment="bottom" text=" BPM" id="6aq-Nr-HMl">
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="8"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="bpmImage" destination="hSP-ZL-bUH" id="Bft-90-T2A"/>
+                        <outlet property="bpmLabel" destination="E3z-Fh-PBN" id="tOO-Yp-olA"/>
+                        <outlet property="breathoutCountGroup" destination="7wV-1C-XXg" id="5eR-Co-8Uz"/>
+                        <outlet property="breathoutLabel" destination="tWp-mC-cxQ" id="uq5-eK-e8b"/>
+                        <segue destination="Pq0-fN-SX6" kind="relationship" relationship="nextPage" id="pip-XE-nUK"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1151" y="157"/>
+        </scene>
+        <!--Workout Progress Control-->
+        <scene sceneID="W0D-ak-Fdh">
+            <objects>
+                <controller identifier="WorkoutProgressControl" title="Workout Progress Control" id="5Wd-j6-Lqa" customClass="WorkoutProgressControlInterfaceController" customModule="FitPal_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="172" alignment="left" layout="vertical" id="fC8-zQ-WVw">
+                            <items>
+                                <button width="1" height="50" alignment="left" backgroundImage="stop-button-new" id="x5y-z6-cjU">
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <connections>
+                                        <action selector="stopButtonClicked" destination="5Wd-j6-Lqa" id="lUc-yr-GjY"/>
+                                    </connections>
+                                </button>
+                                <button width="1" height="50" alignment="right" verticalAlignment="center" backgroundImage="pause-button-new" id="JHA-bq-y4l">
+                                    <connections>
+                                        <action selector="pauseResumeButtonClicked" destination="5Wd-j6-Lqa" id="Ej5-Vx-m0X"/>
+                                    </connections>
+                                </button>
+                                <button width="1" height="50" alignment="left" verticalAlignment="bottom" backgroundImage="skip-button-new" id="qhF-7h-gba">
+                                    <connections>
+                                        <action selector="skipButtonClicked" destination="5Wd-j6-Lqa" id="sxz-YD-jSV"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="pauseResumeButton" destination="JHA-bq-y4l" id="KZm-2q-1gH"/>
+                        <outlet property="skipButton" destination="qhF-7h-gba" id="oyQ-rM-okm"/>
+                        <outlet property="stopButton" destination="x5y-z6-cjU" id="eFF-iT-cLZ"/>
+                        <segue destination="Ssf-Z4-iX5" kind="relationship" relationship="nextPage" id="T2r-4I-rIk"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1150.5050505050506" y="-502.27272727272725"/>
+        </scene>
+        <!--Workout Progress-->
+        <scene sceneID="65F-4L-Efx">
+            <objects>
+                <controller identifier="WorkoutProgress" title="Workout Progress" id="Ssf-Z4-iX5" customClass="WorkoutProgressInterfaceController" customModule="FitPal_WatchKit_Extension">
+                    <items>
+                        <group width="120" height="120" alignment="center" backgroundImage="workout-count-25" id="gYn-B3-ZUt">
+                            <items>
+                                <label alignment="center" verticalAlignment="center" text="5" id="sVQ-fS-hdP">
+                                    <fontDescription key="font" type="system" weight="heavy" pointSize="76"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="loI-uW-5tI">
+                            <items>
+                                <group width="60" height="60" alignment="left" backgroundImage="GreenScore" id="r0f-wf-ddK">
+                                    <items>
+                                        <group width="30" height="50" alignment="center" verticalAlignment="center" layout="vertical" id="nLH-gh-Iwa">
+                                            <items>
+                                                <label width="30" height="11" alignment="center" verticalAlignment="center" text="Score" id="D0q-VZ-kpF">
+                                                    <fontDescription key="font" type="system" weight="semibold" pointSize="10"/>
+                                                </label>
+                                                <label width="42" height="23" alignment="center" verticalAlignment="center" text="88" id="d9k-YM-ept">
+                                                    <color key="textColor" red="0.67450980390000004" green="0.67450980390000004" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="font" type="system" weight="semibold" pointSize="24"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                                <group width="6" height="59" alignment="left" id="kpY-xX-YvC"/>
+                                <group width="136" height="61" alignment="left" layout="vertical" id="phM-1B-hEr">
+                                    <items>
+                                        <group width="100" height="19" alignment="left" id="fPF-4B-kIY">
+                                            <items>
+                                                <label alignment="left" verticalAlignment="center" text="Facility          " id="nHC-Pz-HRI">
+                                                    <color key="textColor" red="0.64313725490196072" green="0.64313725490196072" blue="0.64313725490196072" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="font" type="system" weight="semibold" pointSize="10"/>
+                                                </label>
+                                                <imageView width="22" height="17" alignment="left" image="BenchPressMoji" id="PVI-mU-k0o"/>
+                                            </items>
+                                        </group>
+                                        <group width="1" alignment="left" id="50V-1R-Xuw">
+                                            <items>
+                                                <label alignment="left" verticalAlignment="center" text="Group             " id="f56-xy-8Jg">
+                                                    <color key="textColor" red="0.64313725489999995" green="0.64313725489999995" blue="0.64313725489999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="font" type="system" weight="semibold" pointSize="10"/>
+                                                </label>
+                                                <label alignment="left" text="1/4" id="jMi-0J-DEy">
+                                                    <fontDescription key="font" type="system" weight="heavy" pointSize="14"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                        <group width="1" alignment="left" id="bAc-C8-naF">
+                                            <items>
+                                                <label alignment="left" verticalAlignment="center" text="Duration        " id="Qaf-77-Vxd">
+                                                    <color key="textColor" red="0.64313725489999995" green="0.64313725489999995" blue="0.64313725489999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="font" type="system" weight="semibold" pointSize="10"/>
+                                                </label>
+                                                <label alignment="left" text="00:16" id="L7F-ar-dId">
+                                                    <fontDescription key="font" type="system" weight="heavy" pointSize="14"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="currentGroupLabel" destination="jMi-0J-DEy" id="noU-cM-nvG"/>
+                        <outlet property="currentScoreGroup" destination="r0f-wf-ddK" id="EdG-cj-7vK"/>
+                        <outlet property="currentScoreLabel" destination="d9k-YM-ept" id="FZl-LX-IWW"/>
+                        <outlet property="currentWorkoutCountGroup" destination="gYn-B3-ZUt" id="Ctl-8G-Cnv"/>
+                        <outlet property="currentWorkoutCountLabel" destination="sVQ-fS-hdP" id="aE7-5z-THP"/>
+                        <outlet property="durationLabel" destination="L7F-ar-dId" id="k0b-HS-IKx"/>
+                        <outlet property="facilityImage" destination="PVI-mU-k0o" id="nNi-mf-MCo"/>
+                        <segue destination="Pq0-fN-SX6" kind="relationship" relationship="nextPage" id="A7X-Rt-xsa"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1150.5050505050506" y="-142.60330578512395"/>
+        </scene>
+        <!--Now Playing-->
+        <scene sceneID="2hb-QP-qvc">
+            <objects>
+                <controller identifier="NowPlaying" title="Now Playing" id="Pq0-fN-SX6">
+                    <items>
+                        <nowPlayingView alignment="center" verticalAlignment="center" id="JOY-uS-2UU"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1539" y="8"/>
+        </scene>
+        <!--Loading-->
+        <scene sceneID="50j-d4-wDQ">
+            <objects>
+                <controller identifier="Loading" title="Loading" id="0dQ-TM-aMX" customClass="LoadingInterfaceController" customModule="FitPal_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Loading" id="TKi-gQ-0qk"/>
+                    </items>
+                    <connections>
+                        <outlet property="loadingLabel" destination="TKi-gQ-0qk" id="EEB-aX-rr5"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1539" y="-279"/>
+        </scene>
+        <!--Workout Finish-->
+        <scene sceneID="8jm-sg-0Sc">
+            <objects>
+                <controller identifier="WorkoutFinish" title="Workout Finish" id="ibN-au-Mye" customClass="WorkoutFinishInterfaceController" customModule="FitPal_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" text="🎉" id="32m-FN-S2b">
+                            <fontDescription key="font" type="system" pointSize="100"/>
+                        </label>
+                        <group width="1" height="44" alignment="center" id="DJ2-Sd-rcc">
+                            <items>
+                                <group width="62" height="49" alignment="center" layout="vertical" id="Qao-zg-ZqI">
+                                    <items>
+                                        <label width="46" height="16" alignment="left" text="Energy" id="acW-5K-vuq">
+                                            <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" type="system" weight="medium" pointSize="11"/>
+                                        </label>
+                                        <group width="62" height="20" alignment="left" id="4jV-to-h63">
+                                            <items>
+                                                <label alignment="left" text="567" id="S6r-vq-fOL">
+                                                    <fontDescription key="font" type="boldSystem" pointSize="18"/>
+                                                </label>
+                                                <label alignment="left" verticalAlignment="bottom" text="KCAL" id="CbK-0j-vkq">
+                                                    <fontDescription key="font" type="system" weight="medium" pointSize="8"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                                <group width="62" height="49" alignment="center" layout="vertical" id="RTb-P9-6bg">
+                                    <items>
+                                        <label width="46" height="16" alignment="left" text="Time" id="M4A-Es-yuQ">
+                                            <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" type="system" weight="medium" pointSize="11"/>
+                                        </label>
+                                        <group width="62" height="20" alignment="left" id="u6X-pB-CYD">
+                                            <items>
+                                                <label alignment="left" text="00:06" id="xt9-h4-6tp">
+                                                    <fontDescription key="font" type="boldSystem" pointSize="18"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                                <group width="62" height="49" alignment="right" layout="vertical" id="pST-RT-mwN">
+                                    <items>
+                                        <label width="46" height="16" alignment="left" text="Action" id="jnI-2x-1WM">
+                                            <color key="textColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" type="system" weight="medium" pointSize="11"/>
+                                        </label>
+                                        <group width="62" height="20" alignment="left" id="XHW-Qu-4Vy">
+                                            <items>
+                                                <label alignment="left" text="4" id="vEq-E5-ogq">
+                                                    <fontDescription key="font" type="boldSystem" pointSize="18"/>
+                                                </label>
+                                                <label alignment="left" verticalAlignment="bottom" text="groups" id="rJv-ER-j9h">
+                                                    <fontDescription key="font" type="system" weight="medium" pointSize="8"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="actionLabel" destination="vEq-E5-ogq" id="7w5-9x-ZiP"/>
+                        <outlet property="energyLabel" destination="S6r-vq-fOL" id="uTu-m0-gxt"/>
+                        <outlet property="timeLabel" destination="xt9-h4-6tp" id="Ul4-b7-JdJ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1539" y="282"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="A7X-Rt-xsa"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="BenchPress" width="225" height="168"/>
+        <image name="BenchPressMoji" width="66" height="51"/>
+        <image name="GreenScore" width="300" height="300"/>
+        <image name="Heart" width="63" height="51"/>
+        <image name="breathout347" width="300" height="300"/>
+        <image name="count-down-5" width="160" height="160"/>
+        <image name="pause-button-new" width="498" height="126"/>
+        <image name="skip-button-new" width="501" height="126"/>
+        <image name="stop-button-new" width="501" height="126"/>
+        <image name="workout-count-25" width="300" height="300"/>
+    </resources>
+</document>
