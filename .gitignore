@@ -1,1 +1,5 @@
-.DS_Store
+# For macOS stuff
+*.DS_Store
+
+# For Xcode User Settings
+src/FitPal/FitPal.xcodeproj/xcuserdata/
